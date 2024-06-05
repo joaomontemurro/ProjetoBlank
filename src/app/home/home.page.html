@@ -1,8 +1,18 @@
 <ion-header [translucent]="true">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <ion-toolbar>
+    <div id="jee">
+      <div id ="divleft">
     <ion-title>
       Calculador de areas
     </ion-title>
+        </div>
+        <div id="divright">
+    <a href="quadrado.page.html"><ion-button color="primary" (click)="calcularArea()">Proxima pagina</ion-button></a>
+      </div>
+    </div>
   </ion-toolbar>
 </ion-header>
 
@@ -20,7 +30,11 @@
       <br><br><br>
       <br><br><br>
       <br><br><br>
-      <ion-label color="primary"><h1>Para triângulo</h1></ion-label>
+
+
+      <div class="h1">Para triângulo</div>
+
+
       <ion-label position="floating">Base</ion-label>
       <br>
       <ion-input type="number" placeholder="Informe um valor para BASE." name="base" [(ngModel)]="base"></ion-input>
@@ -32,7 +46,7 @@
       <ion-input type="number" placeholder="Informe um valor para Altura." name="altura" [(ngModel)]="altura"></ion-input>
     </ion-item>
     <br>
-    <ion-button color="secondary" (click)="calcularArea()">Calcular</ion-button>
+    <ion-button color="warning" (click)="calcularArea()">Calcular</ion-button>
     <br>
     <ion-label>...</ion-label>
     <br>
@@ -40,7 +54,11 @@
     <br>
     <br>
     <ion-item>
-      <h1>Para quadrado</h1>
+
+
+      <div class="h1">Para quadrado</div>
+
+
       <ion-label position="floating">Largura</ion-label>
       <br>
       <ion-input type="number" placeholder="Informe um valor para BASE." name="largura" [(ngModel)]="largura"></ion-input>
@@ -52,7 +70,7 @@
       <ion-input type="number" placeholder="Informe um valor para Altura." name="altura" [(ngModel)]="altura2"></ion-input>
     </ion-item>
     <br>
-    <ion-button color="secondary" (click)="calcularArea()">Calcular</ion-button>
+    <ion-button color="warning" (click)="calcularArea()">Calcular</ion-button>
     <br>
     <ion-label>...</ion-label>
     <br>
@@ -60,8 +78,12 @@
     <br>
     <br>
     <ion-item>
-      <h1>Para hexágono</h1>
-      <ion-label position="floating">Apotema</ion-label>
+
+
+      <div class="h1">Para hexâgono</div>
+
+
+      <ion-label position="floating">Apótema</ion-label>
       <br>
       <ion-input type="number" placeholder="Informe um valor para o apotema." name="apotema" [(ngModel)]="apotema"></ion-input>
     </ion-item>
@@ -71,12 +93,13 @@
       <br>
       <ion-input type="number" placeholder="Informe um valor para base." name="base" [(ngModel)]="base2"></ion-input>
     </ion-item>
-
-    <ion-button color="secondary" (click)="calcularArea()">Calcular</ion-button>
+    <br>
+    <ion-button color="warning" (click)="calcularArea()">Calcular</ion-button>
     <br>
     <ion-label>...</ion-label>
     <br>
     <ion-label color="warning">{{resultado3}}</ion-label>
     <br><br><br>
+    <a href="quadrado.page.html"><ion-button color="primary" (click)="calcularArea()">Proxima pagina</ion-button></a>
   </div>
 </ion-content>

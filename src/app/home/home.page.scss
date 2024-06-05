@@ -25,3 +25,33 @@
 #container a {
   text-decoration: none;
 }
+
+.h1 {
+  color: #EEB34C;
+  font-size: 27px;
+}
+
+#divleft {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 25px;
+}
+#divright {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    margin-top: 25px;
+}
+
+#jee {
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+ 
+  
+}

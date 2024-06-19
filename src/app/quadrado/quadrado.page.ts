@@ -7,8 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuadradoPage implements OnInit {
 
-  constructor() { }
+  public areabase! : number;
+  public altura! : number;
+  public resultado! : string;
+  public altura2! : number;
+  public resultado2! : string;
+  
 
+  constructor () { }
+   
+  public calcularArea() : void{
+    this.resultado = "A área é de " + (this.areabase * this.altura) / 3 + " cm³.";
+    this.resultado2 = "A área é de " + (this.altura2 * this.altura2 * this.altura2)  + " cm³.";
+    }
+  
   ngOnInit() {
   }
 

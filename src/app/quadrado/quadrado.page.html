@@ -26,11 +26,51 @@
   </ion-header>
 
   <div id="container">
-    <div class="h1">Para triângulo</div>
-
-
-
-
+    <div class="h1">Para pirâmide</div>
     
+    <ion-item>
+    <ion-label position="floating">Área da base</ion-label>
+      <br>
+      <ion-input type="number" placeholder="Informe um valor para BASE." name="largura" [(ngModel)]="areabase"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Altura</ion-label>
+      <br>
+      <ion-input type="number" placeholder="Informe um valor para Altura." name="altura1" [(ngModel)]="altura"></ion-input>
+    </ion-item>
+
+    <br>
+
+    <ion-item>
+    <ion-button position="floating" color="warning" (click)="calcularArea()">Calcular</ion-button>
+    <br>
+    
+    <br>
+    <ion-label color="warning">{{resultado}}</ion-label>
+    <br>
+    </ion-item>
+
+    <br>
+    
+    <div class="h1">Para cubo</div>
+    
+    <ion-item>
+    <ion-label position="floating">Altura</ion-label>
+      <br>
+      <ion-input type="number" placeholder="Informe um valor para Altura." name="altura2" [(ngModel)]="altura2"></ion-input>
+    </ion-item>
+
+    <br>
+
+    <ion-item>
+    <ion-button color="warning" (click)="calcularArea()">Calcular</ion-button>
+    <br>
+
+    <br>
+    <ion-label color="warning">{{resultado2}}</ion-label>
+    <br>
+    </ion-item>
+
   </div>
 </ion-content>
